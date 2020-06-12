@@ -1,1 +1,262 @@
-/* CSS here :) */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+start */
+:root {
+    --header-height: 60px;
+}
+
+nav {
+    background-color: #383737;
+    /* max-height: (var(--header-height)); */
+    /* max-height: 50px; */
+    display: flex;
+    align-items: center; 
+    padding:  5px;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    margin: 10px;
+    width: 100%;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.toplogo {
+    width: 60px;
+    padding: 24 24;
+}
+
+.burger {
+    width: 80px;
+    padding: 24 24;
+    visibility: none;
+    display: none;
+} 
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.intro {
+    border: solid black 1px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-image: url('/imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.intromiddle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid, white, 2px 2px 2px 2px;
+    height: 200px;
+}
+
+.falcon9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dreams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.features {
+    border: solid black 1px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.amazing-feature1 {
+    border: solid black 1px;
+    height: 80%;
+    width: 20%;
+    display: block;
+    text-align: center;
+}
+
+.amazing-feature1 img, h3, p {
+    padding: 20px 30px 5px 30px;
+}
+
+
+.amazing-feature2 {
+    border: solid black 1px;
+    height: 80%;
+    width: 20%;
+    display: block;
+    text-align: center;
+}
+
+.amazing-feature2 img, h3, p {
+    padding: 20px 30px 5px 30px;
+}
+
+.amazing-feature3 {
+    border: solid black 1px;
+    height: 80%;
+    width: 20%;
+    display: block;
+    text-align: center;
+}
+
+.amazing-feature3 img, h3, p {
+    padding: 20px 30px 5px 30px;
+}
+
+.cool-text {
+    border: solid black 1px;
+    height: 400px;
+    background-color: #383737;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: white;
+    display: inline-block;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.cool-text h2 {
+    font-size: 40px;
+    padding: 70px 0 30px 30px;
+}
+
+.cool-text p {
+    font-size: 20px;
+    padding: 70px 80px 30px 30px;
+}
+
+.gradient {
+    border: solid black 1px;
+    height: 400px;
+    display: block;
+    text-align: right;  
+}
+
+.gradient h2 {
+    font-size: 40px;
+    padding: 70px 30px 30px 30px;
+    color: white;
+}
+
+.gradient p {
+    font-size: 20px;
+    padding: 70px 30px 30px 30px;
+    color: white;
+}
+
+#grad {
+    height: 400px;
+    background-image: linear-gradient(to right,white, blue);
+  }
+
+.images {
+    border: solid black 1px;
+    height: 400px;
+}
+
+.input {
+    border: solid black 1px;
+    height: 175px;
+}
+
+.links {
+    border: solid black 1px;
+    height: 175px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.image {
+    width: 33%;
+    height: 50%;
+    border: 0px;
+    padding: 0px;
+}
